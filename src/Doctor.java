@@ -21,13 +21,6 @@ public class Doctor {
 
     /**
      * New doctor instance
-     */
-    Doctor() {
-        initId();
-    }
-
-    /**
-     * New doctor instance
      *
      * @param name Doctor name
      * @param speciality Doctor speciality
