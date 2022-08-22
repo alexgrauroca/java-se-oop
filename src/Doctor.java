@@ -3,6 +3,10 @@
  */
 public class Doctor {
     /**
+     * Id autoincremental control
+     */
+    static int nextId = 0;
+    /**
      * Doctor id
      */
     int id;
@@ -19,16 +23,27 @@ public class Doctor {
      * New doctor instance
      */
     Doctor() {
-        System.out.println("Building a doctor object");
+        initId();
     }
 
     /**
      * New doctor instance
      *
-     * @param name
+     * @param name Doctor name
+     * @param speciality Doctor speciality
      */
-    Doctor(String name) {
-        System.out.println("The doctor name is: " + name);
+    Doctor(String name, String speciality) {
+        initId();
+        this.name = name;
+        this.speciality = speciality;
+    }
+
+    /**
+     * Init the doctor id
+     */
+    private void initId() {
+        nextId++;
+        this.id = nextId;
     }
 
     /**

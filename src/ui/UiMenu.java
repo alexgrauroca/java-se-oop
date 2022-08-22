@@ -2,7 +2,7 @@ package ui;
 import java.util.Scanner;
 
 /**
- * User interface menu
+ * User interface menu controller
  */
 public class UiMenu {
     public static final String[] MONTHS = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
