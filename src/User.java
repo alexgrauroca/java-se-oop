@@ -5,8 +5,7 @@ public class User {
     /**
      * Id autoincremental control
      */
-    private static int nextId = 0;
-    
+    private static int nextId = 0;    
 
     /**
      * User id
@@ -50,6 +49,11 @@ public class User {
         this.id = nextId;
     }
 
+    @Override
+    public String toString() {
+        return "User: " + this.name + ", Email: " + this.email + "\nAddress: " + this.address + ". Phone: " + this.phoneNumber;
+    }
+    
     /**
      * Get user id
      *

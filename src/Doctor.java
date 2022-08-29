@@ -70,6 +70,9 @@ public class Doctor extends User {
         return availableAppointments;
     }
 
+    /**
+     * Doctor available appointment object
+     */
     private static class AvailableAppointment {
         /**
          * Id autoincremental control
