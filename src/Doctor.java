@@ -46,7 +46,7 @@ public class Doctor extends User {
     /**
      * Get doctor speciality
      *
-     * @return
+     * @return Doctor speciality
      */
     public String getSpeciality() {
         return this.speciality;

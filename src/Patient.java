@@ -32,7 +32,7 @@ public class Patient extends User {
     /**
      * Get patient birthday
      *
-     * @return
+     * @return Patient birthday
      */
     public String getBirthday() {
         return this.birthday;
@@ -50,7 +50,7 @@ public class Patient extends User {
     /**
      * Get patient weight
      *
-     * @return
+     * @return Patient weight
      */
     public double getWeight() {
         return this.weight;
@@ -68,7 +68,7 @@ public class Patient extends User {
     /**
      * Get patient height
      *
-     * @return
+     * @return Patient height
      */
     public double getHeight() {
         return this.height;
@@ -86,7 +86,7 @@ public class Patient extends User {
     /**
      * Get patient blood
      *
-     * @return
+     * @return Patient blood
      */
     public String getBlood() {
         return this.blood;
