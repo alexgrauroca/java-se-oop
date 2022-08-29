@@ -53,7 +53,7 @@ public class User {
     /**
      * Get user id
      *
-     * @return
+     * @return User id
      */
     public int getId() {
         return this.id;
@@ -62,7 +62,7 @@ public class User {
     /**
      * Get user name
      *
-     * @return
+     * @return User name
      */
     public String getName() {
         return this.name;
@@ -80,7 +80,7 @@ public class User {
     /**
      * Get user email
      *
-     * @return
+     * @return User email
      */
     public String getEmail() {
         return this.email;
@@ -98,7 +98,7 @@ public class User {
     /**
      * Get user address
      *
-     * @return
+     * @return User address
      */
     public String getAddress() {
         return this.address;
@@ -116,7 +116,7 @@ public class User {
     /**
      * Get user phone number
      *
-     * @return
+     * @return User phone number
      */
     public String getPhoneNumber() {
         return this.phoneNumber;
