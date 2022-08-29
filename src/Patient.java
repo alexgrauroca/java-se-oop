@@ -29,6 +29,11 @@ public class Patient extends User {
         super(name, email);
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + "\nAge: " + this.birthday + ", Weight: " + this.weight + ", Height: " + this.height + ", Blood: " + this.blood;
+    }
+
     /**
      * Get patient birthday
      *
