@@ -1,70 +1,65 @@
+package model;
+
 import java.util.ArrayList;
 import java.util.Date;
 
 /**
- * Doctor object
+ * UserSpecialist object
  */
-public class Doctor extends User {
+public class UserSpecialist extends User {
     /**
-     * Doctor speciality
+     * UserSpecialist speciality
      */
     private String speciality;
     /**
-     * List of doctor available appointments
+     * List of user specialist available appointments
      */
     ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
 
     /**
-     * New doctor instance
+     * New user specialist instance
      *
-     * @param name Doctor name
-     * @param email Doctor email
-     * @param speciality Doctor speciality
+     * @param name UserSpecialist name
+     * @param email UserSpecialist email
+     * @param speciality UserSpecialist speciality
      */
-    Doctor(String name, String email, String speciality) {
+    UserSpecialist(String name, String email, String speciality) {
         super(name, email);
         this.speciality = speciality;
     }
 
     /**
-     * Add new available appointment to the doctor
+     * Add new available appointment to the user specialist
      *
      * @param date Available appointment date
      * @param time Available appointment time
      */
     public void addAvailableAppointment(Date date, String time) {
-        availableAppointments.add(new Doctor.AvailableAppointment(date, time));
-    }
-    
-    /**
-     * Print the doctor name
-     */
-    public void showName() {
-        System.out.println(this.getName());
+        availableAppointments.add(new UserSpecialist.AvailableAppointment(date, time));
     }
 
     /**
-     * Get doctor speciality
+     * Get user specialist speciality
      *
-     * @return Doctor speciality
+     * @return UserSpecialist speciality
      */
     public String getSpeciality() {
         return this.speciality;
     }
 
     /**
-     * Set doctor speciality
+     * Set user specialist speciality
      *
-     * @param speciality Doctor speciality
+     * @param speciality UserSpecialist speciality
      */
     public void setSpeciality(String speciality) {
         this.speciality = speciality;
     }
 
     /**
-     * Get doctor available appointments list
+     * Get user specialist available appointments list
      *
-     * @return Doctor available appointements list
+     * @return UserSpecialist available appointements list
      */
     public ArrayList<AvailableAppointment> getAvailableAppointments() {
         return availableAppointments;
@@ -75,7 +70,7 @@ public class Doctor extends User {
         return super.toString() + "\nSpeciality: " + this.speciality + "\nAvailable: " + this.availableAppointments.toString();
     }
     /**
-     * Doctor available appointment object
+     * UserSpecialist available appointment object
      */
     private static class AvailableAppointment {
         /**
@@ -108,7 +103,7 @@ public class Doctor extends User {
         }
 
         /**
-         * Init the doctor id
+         * Init the user specialist id
          */
         private void initId() {
             nextId++;
