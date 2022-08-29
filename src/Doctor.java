@@ -70,6 +70,10 @@ public class Doctor extends User {
         return availableAppointments;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + "\nSpeciality: " + this.speciality + "\nAvailable: " + this.availableAppointments.toString();
+    }
     /**
      * Doctor available appointment object
      */
@@ -154,6 +158,11 @@ public class Doctor extends User {
          */
         public void setTime(String time) {
             this.time = time;
+        }
+    
+        @Override
+        public String toString() {
+            return "\nAvailable appointment\nDate: " + this.date + ", Time: " + this.time + "\n";
         }
     }
 }

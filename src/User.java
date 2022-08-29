@@ -48,11 +48,6 @@ public class User {
         nextId++;
         this.id = nextId;
     }
-
-    @Override
-    public String toString() {
-        return "User: " + this.name + ", Email: " + this.email + "\nAddress: " + this.address + ". Phone: " + this.phoneNumber;
-    }
     
     /**
      * Get user id
@@ -133,5 +128,10 @@ public class User {
      */
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "User: " + this.name + ", Email: " + this.email + "\nAddress: " + this.address + ". Phone: " + this.phoneNumber;
     }
 }
