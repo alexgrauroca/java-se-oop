@@ -1,7 +1,7 @@
 package model;
 
 /**
- * User object
+ * User abstract class
  */
 public abstract class User {
     /**
